@@ -17,7 +17,7 @@ public class UserInMemoryRepository : IUserRepository
     // Not sure if Update and Delete would be necessary, but in case User data wants to be updated or User to be deleted
     public Task UpdateAsync(User user)
     {
-        var existingUser = users.SingleOrDefault(u => u.UserId == user.UserId);
+        User? existingUser = users.SingleOrDefault(u => u.UserId == user.UserId);
         if (existingUser == null)
         {
             throw new InvalidOperationException($"User ID '{user.UserId}' not found");
@@ -31,10 +31,10 @@ public class UserInMemoryRepository : IUserRepository
 
     public Task DeleteAsync(int id)
     {
-        var userToRemove = users.SingleOrDefault(u => u.UserId == id);
+        User? userToRemove = users.SingleOrDefault(u => u.UserId == id);
         if (userToRemove == null)
         {
-            throw new InvalidOperationException($"User with ID '{id}' not found");
+            throw new InvalidOperationException($"User ID '{id}' not found");
         }
 
         users.Remove(userToRemove);
@@ -43,10 +43,10 @@ public class UserInMemoryRepository : IUserRepository
 
     public Task<User> GetSingleAsync(int id)
     {
-        var user = users.SingleOrDefault(u => u.UserId == id);
+        User? user = users.SingleOrDefault(u => u.UserId == id);
         if (user == null)
         {
-            throw new InvalidOperationException($"User with ID '{id}' not found");
+            throw new InvalidOperationException($"User ID '{id}' not found");
         }
 
         return Task.FromResult(user);
