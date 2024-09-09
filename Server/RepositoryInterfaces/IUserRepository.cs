@@ -12,6 +12,6 @@ public interface IUserRepository
     Task DeleteAsync(int id);
     // Returns the user matching the given ID
     Task<User> GetSingleAsync(int id);
-    // Returns an IQueryable for multiple users
+    // Returns an IQueryable for multiple users (not sure whether it will be useful later)
     IQueryable<User> GetMany();
 }

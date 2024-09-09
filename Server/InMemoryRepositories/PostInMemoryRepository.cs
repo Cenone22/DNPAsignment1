@@ -7,7 +7,6 @@ public class PostInMemoryRepository : IPostRepository
 {
     private List<Post> posts;
     
-    private IPostRepository _postRepositoryImplementation;
     //takes a Post as parameter, returns a Post (inside a Task)
     public Task<Post> AddAsync(Post post)
     {
