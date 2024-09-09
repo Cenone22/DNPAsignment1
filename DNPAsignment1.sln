@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryContracts", "Serv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryInterfaces", "Server\RepositoryInterfaces\RepositoryInterfaces.csproj", "{50FA74A7-E04D-4344-91CD-662BEAD41B2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InMemoryRepositories", "Server\InMemoryRepositories\InMemoryRepositories.csproj", "{446C52C2-3530-415B-8C8A-6ECB15354389}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,7 @@ Global
 		{09339393-EC01-4968-B244-D1D7BC6A2D0E} = {8C87163B-3D4E-4F38-86C8-CA24D838CDFA}
 		{CD3CD0D1-E979-454A-BA77-8E9E5CE383B4} = {8C87163B-3D4E-4F38-86C8-CA24D838CDFA}
 		{50FA74A7-E04D-4344-91CD-662BEAD41B2E} = {8C87163B-3D4E-4F38-86C8-CA24D838CDFA}
+		{446C52C2-3530-415B-8C8A-6ECB15354389} = {8C87163B-3D4E-4F38-86C8-CA24D838CDFA}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{09339393-EC01-4968-B244-D1D7BC6A2D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -31,5 +34,9 @@ Global
 		{50FA74A7-E04D-4344-91CD-662BEAD41B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50FA74A7-E04D-4344-91CD-662BEAD41B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50FA74A7-E04D-4344-91CD-662BEAD41B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{446C52C2-3530-415B-8C8A-6ECB15354389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{446C52C2-3530-415B-8C8A-6ECB15354389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{446C52C2-3530-415B-8C8A-6ECB15354389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{446C52C2-3530-415B-8C8A-6ECB15354389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
